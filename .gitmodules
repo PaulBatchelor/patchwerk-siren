@@ -1,0 +1,6 @@
+[submodule "patchwerk"]
+	path = patchwerk
+	url = git://github.com/paulbatchelor/patchwerk
+[submodule "soundpipe"]
+	path = soundpipe
+	url = git://github.com/paulbatchelor/soundpipe
