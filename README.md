@@ -10,7 +10,9 @@ To build, clone this repo and go into the directory.
 Then run:
 
 git submodule init
+
 git submodule update
+
 make
 
 With any luck, there should be an executable called
