@@ -31,7 +31,7 @@ found in the Soundpipe makefile. It concatenates all the
 header files into one header, along with a header guard.
 
 Patchwerk code needs to be tangled into two files:
-patchwerk.c and patchwerk.h. This is done using CWEB's
+`patchwerk.c` and `patchwerk.h`. This is done using CWEB's
 `ctangle` utility, a program that usually ships with a
 standard texlive distribution. (for those who do not have
 or wish to install texlive, ctangle can also be compiled
