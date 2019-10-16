@@ -38,6 +38,8 @@ CFLAGS+=-Ipatchwerk -DNO_LIBSNDFILE
 CFLAGS+=-Isoundpipe/lib/dr_wav
 CFLAGS+=-Isoundpipe/lib/faust
 
+CFLAGS+=-Isoundpipe/h/
+
 default: siren
 
 soundpipe/h/soundpipe.h:
@@ -46,7 +48,7 @@ soundpipe/h/soundpipe.h:
 patchwerk/patchwerk.c:
 	cd patchwerk; make patchwerk.c
 
-siren: $(OBJ)
+siren: soundpipe/h/soundpipe.h $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $@
 
 clean:
@@ -54,3 +56,4 @@ clean:
 	cd soundpipe; make clean
 	$(RM) $(OBJ)
 	$(RM) siren
+	$(RM) soundpipe/h/soundpipe.h
